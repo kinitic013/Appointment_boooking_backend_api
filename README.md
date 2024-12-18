@@ -48,7 +48,7 @@ project-root/
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd college-appointment-system
+   cd Appointment_booking_backend_api
    ```
 
 2. Install dependencies:
