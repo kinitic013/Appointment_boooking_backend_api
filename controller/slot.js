@@ -35,7 +35,7 @@ module.exports.create = async(req,res)=>{
     }
     catch(error){
         console.error(error);
-        res.status(400).json({ error: 'Slot creation failed' });
+        res.status(500).json({ error: 'Slot creation failed' });
     }
 }
 module.exports.getById = async(req,res)=>
@@ -49,7 +49,7 @@ module.exports.getById = async(req,res)=>
     }
     catch(error)
     {
-        res.status(400).json({"error" : "Search query failed " + error});
+        res.status(500).json({"error" : "Search query failed " + error});
     }
 }
 

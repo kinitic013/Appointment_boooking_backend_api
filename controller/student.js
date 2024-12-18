@@ -7,10 +7,11 @@ const getAllQuery = require("../utils/runAll")
 module.exports.allAppointment = async (req,res)=>{
 
     try{
-        const {student_id} = req.param('student_id');
-    
-        const check_query = `SELECT COUNT(student_id) FROM student WHERE student_id = ?`;
+        const student_id = req.param('student_id');
+        console.log(student_id);
+        const check_query = `SELECT COUNT(*) FROM student WHERE student_id = ?`;
         const check_result = await getAllQuery(check_query,[student_id]);
+        console.log(check_result);
         if(check_result[0]['COUNT(*)'] == 0)
         {
             res.status(404).json({"error":"Student does not exist"});
