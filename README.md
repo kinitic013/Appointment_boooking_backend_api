@@ -37,17 +37,11 @@ project-root/
 │   ├── runAll.js        # Utility to run multiple queries
 │   └── runQuery.js      # Utility for running individual queries
 │
-├── test/                # Test directory
-│   └── app.test.js      # Main application test file
+├── app.test.js      # Main application test file
 │
 ├── db.sqlite            # SQLite database file
 └── node_modules/        # Dependency packages
 ```
-
-## Prerequisites
-
-- Node.js (v14 or later)
-- npm (v6 or later)
 
 ## Installation
 
@@ -78,26 +72,25 @@ npm run start:dev
 
 ### Run Tests
 ```bash
-npm test
+npm run test
 ```
 
 ## API Endpoints
 
 ### Authentication
-- `POST /auth/student/register`
-- `POST /auth/student/login`
-- `POST /auth/professor/register`
-- `POST /auth/professor/login`
+- `POST /student/signup`
+- `POST /student/login`
+- `POST /professor/signup`
+- `POST /professor/login`
 
 ### Slot Management
-- `POST /slots/create` (Professor)
-- `GET /slots/available` (Student)
-- `GET /slots/my-slots` (Professor)
+- `POST /slots/create`
+- `GET /slots/getById` 
 
 ### Appointment Booking
-- `POST /appointments/book`
-- `GET /appointments/my-appointments`
-- `DELETE /appointments/:id`
+- `POST /slot/book`
+- `GET /student/allappointment`
+- `DELETE /slot/cancel`
 
 ## Database Schema
 
