@@ -62,12 +62,6 @@ project-root/
 ```bash
 node index.js
 ```
-
-### Development Mode
-```bash
-npm run start:dev
-```
-
 ## Testing
 
 ### Run Tests
