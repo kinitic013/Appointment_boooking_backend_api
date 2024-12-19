@@ -34,8 +34,8 @@ project-root/
 │   └── student.js       # Student-specific routes
 │
 ├── utils/               # Utility functions
-│   ├── runAll.js        # Utility to run multiple queries
-│   └── runQuery.js      # Utility for running individual queries
+│   ├── runAll.js        
+│   └── runQuery.js      
 │
 ├── app.test.js      # Main application test file
 │
